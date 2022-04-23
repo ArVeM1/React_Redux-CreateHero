@@ -16,7 +16,6 @@ const HeroesFilters = () => {
 
     useEffect(() => {
         dispatch(fetchFilters(request));
-
         // eslint-disable-next-line
     }, []);
 
@@ -32,7 +31,6 @@ const HeroesFilters = () => {
         }
 
         return arr.map(({name, className, label}) => {
-
             const btnClass = classNames('btn', className, {
                 'active': name === activeFilter
             });
